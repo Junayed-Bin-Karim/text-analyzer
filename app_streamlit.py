@@ -144,7 +144,7 @@ def analyze_word_length_distribution(words):
     return length_dist
 
 # ===== Analyze Button =====
-if st.button("🚀 Analyze Text", use_container_width=True):
+if st.button(" Analyze Text", use_container_width=True):
     if text.strip() == "":
         st.error("⚠️ Please enter some text to analyze!")
     else:
@@ -190,7 +190,7 @@ if st.button("🚀 Analyze Text", use_container_width=True):
         
         # ----- Display Results -----
         st.markdown("---")
-        st.success("🎉 Analysis Complete!")
+        st.success(" Analysis Complete!")
         
         # ===== Metrics in Columns =====
         if "Basic Statistics" in analysis_options:
@@ -286,7 +286,7 @@ if st.button("🚀 Analyze Text", use_container_width=True):
         
         # ===== Word Frequency =====
         if "Word Frequency" in analysis_options:
-            st.markdown("### 📊 Word Frequency Analysis")
+            st.markdown("### Word Frequency Analysis")
             
             col1, col2 = st.columns(2)
             
@@ -325,7 +325,7 @@ if st.button("🚀 Analyze Text", use_container_width=True):
         
         # ===== Interactive Charts =====
         if show_charts:
-            st.markdown("### 📊 Visual Analytics")
+            st.markdown("### Visual Analytics")
             
             col1, col2 = st.columns(2)
             
@@ -368,7 +368,7 @@ if st.button("🚀 Analyze Text", use_container_width=True):
 st.markdown("---")
 st.markdown(
     "<p style='text-align: center; color: #d1d5db;'>"
-    "Developed with ❤️ by <strong>Md Junayed Bin Karim</strong> | CSE, DIU | "
+    "Developed by <strong>Md Junayed Bin Karim</strong> | CSE, DIU | "
     "Advanced Text Analysis Tool</p>", 
     unsafe_allow_html=True
 )
