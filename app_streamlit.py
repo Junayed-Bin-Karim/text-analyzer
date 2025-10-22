@@ -84,7 +84,7 @@ with st.sidebar:
     show_raw_data = st.checkbox("Show Raw Data", value=False)
     
     st.markdown("---")
-    st.markdown("### 📊 About")
+    st.markdown("### About")
     st.markdown("""
     **Advanced Text Analyzer** 
     - Word & Character Analysis
