@@ -234,7 +234,7 @@ if st.button(" Analyze Text", use_container_width=True):
         
         with col1:
             if "Text Properties" in analysis_options:
-                st.markdown("### 🔍 Text Properties")
+                st.markdown("###  Text Properties")
                 st.markdown(f"""
                 <div class="feature-card">
                     <strong>Vowels:</strong> <span class="highlight">{vowels}</span>
