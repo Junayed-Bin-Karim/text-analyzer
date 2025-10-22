@@ -99,7 +99,7 @@ with st.sidebar:
 # ===== Header =====
 col1, col2 = st.columns([3, 1])
 with col1:
-    st.title("📊 Advanced Text Analyzer")
+    st.title("Advanced Text Analyzer")
     st.markdown("### Comprehensive Text Analysis Tool")
 with col2:
     st.markdown(f"<p style='text-align: right; color: #fbbf24;'>🕒 {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>", 
@@ -194,13 +194,13 @@ if st.button(" Analyze Text", use_container_width=True):
         
         # ===== Metrics in Columns =====
         if "Basic Statistics" in analysis_options:
-            st.markdown("### 📈 Basic Statistics")
+            st.markdown("### Basic Statistics")
             col1, col2, col3, col4 = st.columns(4)
             
             with col1:
                 st.markdown(f"""
                 <div class="metric-card">
-                    <h3>📝 {words_count}</h3>
+                    <h3> {words_count}</h3>
                     <p>Words</p>
                 </div>
                 """, unsafe_allow_html=True)
@@ -208,7 +208,7 @@ if st.button(" Analyze Text", use_container_width=True):
             with col2:
                 st.markdown(f"""
                 <div class="metric-card">
-                    <h3>🔤 {characters}</h3>
+                    <h3>{characters}</h3>
                     <p>Characters</p>
                 </div>
                 """, unsafe_allow_html=True)
@@ -216,7 +216,7 @@ if st.button(" Analyze Text", use_container_width=True):
             with col3:
                 st.markdown(f"""
                 <div class="metric-card">
-                    <h3>📊 {total_lines}</h3>
+                    <h3> {total_lines}</h3>
                     <p>Lines</p>
                 </div>
                 """, unsafe_allow_html=True)
@@ -224,7 +224,7 @@ if st.button(" Analyze Text", use_container_width=True):
             with col4:
                 st.markdown(f"""
                 <div class="metric-card">
-                    <h3>⏱️ {reading_time}m</h3>
+                    <h3> {reading_time}m</h3>
                     <p>Reading Time</p>
                 </div>
                 """, unsafe_allow_html=True)
