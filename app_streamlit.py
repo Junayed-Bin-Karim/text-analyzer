@@ -7,7 +7,6 @@ from collections import Counter
 st.set_page_config(
     page_title="Advanced Text Analyzer | Md Junayed Bin Karim",
     layout="centered",
-    page_icon="🧠"
 )
 
 # ===== Custom CSS =====
@@ -22,7 +21,7 @@ div.stButton > button:hover { background-color:#059669; transform: scale(1.05);}
 """, unsafe_allow_html=True)
 
 # ===== Header =====
-st.title("🧠 Advanced Text Analyzer")
+st.title("Advanced Text Analyzer")
 st.subheader("Developed by Md Junayed Bin Karim | CSE, DIU")
 
 # ===== Text Input =====
@@ -57,7 +56,7 @@ if st.button("Analyze Text"):
         is_palindrome = clean_text.replace(" ", "").lower() == reversed_text.replace(" ", "").lower()
 
         # ----- Display Results -----
-        st.success("📊 Analysis Result")
+        st.success("Analysis Result")
         st.markdown(f"**Total Lines:** {total_lines}")
         st.markdown(f"**Total Words:** {words}")
         st.markdown(f"**Vowels:** {vowels}")
@@ -66,7 +65,7 @@ if st.button("Analyze Text"):
         st.markdown(f"**Special Characters:** {specials}")
         st.markdown(f"**Cleaned Text:** {clean_text}")
         st.markdown(f"**Reversed Text:** {reversed_text}")
-        st.markdown(f"**Palindrome?:** {'✅ Yes' if is_palindrome else '❌ No'}")
+        st.markdown(f"**Palindrome?:** {'Yes' if is_palindrome else '❌ No'}")
 
         st.markdown("**Top 5 Frequent Words:**")
         for word, count in freq_words:
