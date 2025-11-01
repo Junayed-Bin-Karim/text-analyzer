@@ -78,7 +78,7 @@ st.markdown("""
     /* ===== Buttons ===== */
     div.stButton > button {
         background: linear-gradient(135deg, #10b981, #059669);
-        color: white;
+        color: black;
         padding: 12px 28px;
         border-radius: 30px;
         font-size: 16px;
