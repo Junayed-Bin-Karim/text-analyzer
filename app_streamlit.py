@@ -134,7 +134,7 @@ st.markdown("""
 
 # ===== Sidebar =====
 with st.sidebar:
-    st.title("🔧 Settings")
+    st.title("Settings")
     st.markdown("---")
     
     analysis_options = st.multiselect(
