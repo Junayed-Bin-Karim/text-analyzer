@@ -62,7 +62,7 @@ st.markdown("""
     /* ===== Text Area Styling ===== */
     .stTextArea>div>div>textarea { 
         background-color: rgba(255,255,255,0.12); 
-        color: #f9fafb; 
+        color: black; 
         border-radius: 14px; 
         padding: 14px; 
         font-size: 16px; 
