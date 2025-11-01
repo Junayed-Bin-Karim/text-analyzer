@@ -17,50 +17,119 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-:root {
-    --bg-light: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
-    --bg-dark: radial-gradient(circle at top left, #0f172a 0%, #1e293b 50%, #020617 100%);
-    --text-light: #0f172a;
-    --text-dark: #e2e8f0;
-    --accent-light: #10b981;
-    --accent-dark: #38bdf8;
-}
-
-/* Base Styles for Both Themes */
-.main { transition: all 0.4s ease; }
-.stApp { background: transparent; }
-.metric-card, .feature-card, .stTextArea>div>div>textarea, div.stButton > button {
-    transition: all 0.3s ease;
-}
-
-/* ===== Light Theme ===== */
-[data-theme="light"] .main { background: var(--bg-light); color: var(--text-light); }
-[data-theme="light"] .metric-card { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,0,0.05); }
-[data-theme="light"] .feature-card { background: rgba(255,255,255,0.9); border-left-color: var(--accent-light); }
-[data-theme="light"] .stTextArea>div>div>textarea { background-color: rgba(255,255,255,0.8); color: var(--text-light); border: 1px solid rgba(0,0,0,0.1); }
-[data-theme="light"] div.stButton > button { background: linear-gradient(135deg, var(--accent-light), #059669); box-shadow: 0 4px 12px rgba(16,185,129,0.25); }
-[data-theme="light"] .highlight { background: linear-gradient(45deg, #d97706, #f59e0b); }
-
-/* ===== Dark/Neon Theme ===== */
-[data-theme="dark"] .main { background: var(--bg-dark); color: var(--text-dark); }
-[data-theme="dark"] .metric-card { background: rgba(15,23,42,0.7); border: 1px solid rgba(96,165,250,0.3); }
-[data-theme="dark"] .feature-card { background: rgba(30,41,59,0.75); border-left-color: var(--accent-dark); }
-[data-theme="dark"] .stTextArea>div>div>textarea { background-color: rgba(15,23,42,0.6); color: var(--text-dark); border: 1px solid rgba(59,130,246,0.3); }
-[data-theme="dark"] div.stButton > button { background: linear-gradient(135deg, #3b82f6, #06b6d4); box-shadow: 0 4px 15px rgba(56,189,248,0.3); }
-[data-theme="dark"] .highlight { background: linear-gradient(45deg, #60a5fa, #38bdf8); }
-</style>
-
-<script>
-(function() {
-    function setTheme() {
-        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    /* ===== Page Background ===== */
+    .main { 
+        background: radial-gradient(circle at top left, #667eea 0%, #764ba2 25%, #111827 100%);
+        color: #f3f4f6;
     }
-    setTheme();
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setTheme);
-})();
-</script>
+    .stApp { 
+        background: transparent; 
+    }
+
+    /* ===== Metric / Card Components ===== */
+    .metric-card { 
+        background: rgba(255, 255, 255, 0.08); 
+        padding: 22px; 
+        border-radius: 18px; 
+        margin: 15px 0;
+        border: 1px solid rgba(255,255,255,0.15);
+        box-shadow: 0 4px 25px rgba(0,0,0,0.15);
+        backdrop-filter: blur(12px);
+        transition: all 0.3s ease;
+    }
+    .metric-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+        border-color: rgba(255,255,255,0.25);
+    }
+
+    /* ===== Feature Card ===== */
+    .feature-card {
+        background: rgba(255,255,255,0.07);
+        padding: 16px;
+        border-radius: 14px;
+        margin: 10px 0;
+        border-left: 5px solid #10b981;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+    }
+    .feature-card:hover {
+        background: rgba(255,255,255,0.15);
+        border-left-color: #34d399;
+        transform: scale(1.02);
+    }
+
+    /* ===== Text Area Styling ===== */
+    .stTextArea>div>div>textarea { 
+        background-color: rgba(255,255,255,0.12); 
+        color: black; 
+        border-radius: 14px; 
+        padding: 14px; 
+        font-size: 16px; 
+        border: 1px solid rgba(255,255,255,0.25);
+        transition: all 0.3s ease;
+    }
+    .stTextArea>div>div>textarea:focus {
+        outline: none !important;
+        border-color: #10b981;
+        box-shadow: 0 0 10px rgba(16,185,129,0.4);
+    }
+
+    /* ===== Buttons ===== */
+    div.stButton > button {
+        background: linear-gradient(135deg, #10b981, #059669);
+        color: white;
+        padding: 12px 28px;
+        border-radius: 30px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        width: 100%;
+        margin: 12px 0;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    div.stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+        background: linear-gradient(135deg, #34d399, #059669);
+    }
+
+    /* ===== Highlight Text ===== */
+    .highlight {
+        background: linear-gradient(45deg, #fbbf24, #f59e0b);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        letter-spacing: 0.3px;
+    }
+
+    /* ===== Header Styling ===== */
+    h1, h2, h3, h4 {
+        color: #f9fafb;
+        font-weight: 700;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+
+    /* ===== Subtle Scrollbar ===== */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: rgba(255,255,255,0.05);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.3);
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(255,255,255,0.5);
+    }
+</style>
 """, unsafe_allow_html=True)
+
 
 
 # ===== Sidebar =====
