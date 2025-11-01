@@ -15,60 +15,61 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+
 st.markdown("""
 <style>
     .main { 
-        background: linear-gradient(135deg, #f8fafc 0%, #eef2ff 100%);
-        color: #0f172a;
+        background: radial-gradient(circle at top left, #0f172a 0%, #1e293b 50%, #020617 100%);
+        color: #e2e8f0;
     }
     .stApp { background: transparent; }
 
     .metric-card { 
-        background: rgba(255,255,255,0.85); 
+        background: rgba(15,23,42,0.7); 
         padding: 22px; 
         border-radius: 18px; 
         margin: 15px 0;
-        border: 1px solid rgba(0,0,0,0.05);
-        box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+        border: 1px solid rgba(96,165,250,0.3);
+        box-shadow: 0 4px 25px rgba(37,99,235,0.1);
+        backdrop-filter: blur(12px);
         transition: all 0.3s ease;
     }
     .metric-card:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        box-shadow: 0 8px 30px rgba(96,165,250,0.3);
     }
 
     .feature-card {
-        background: rgba(255,255,255,0.9);
+        background: rgba(30,41,59,0.75);
         padding: 16px;
         border-radius: 14px;
         margin: 10px 0;
-        border-left: 5px solid #10b981;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        border-left: 4px solid #38bdf8;
         transition: all 0.3s ease;
     }
     .feature-card:hover {
-        background: rgba(255,255,255,1);
-        border-left-color: #059669;
+        background: rgba(56,189,248,0.12);
+        border-left-color: #60a5fa;
         transform: scale(1.02);
     }
 
     .stTextArea>div>div>textarea { 
-        background-color: rgba(255,255,255,0.8); 
-        color: #0f172a; 
+        background-color: rgba(15,23,42,0.6); 
+        color: #f9fafb; 
         border-radius: 14px; 
         padding: 14px; 
         font-size: 16px; 
-        border: 1px solid rgba(0,0,0,0.1);
+        border: 1px solid rgba(59,130,246,0.3);
         transition: all 0.3s ease;
     }
     .stTextArea>div>div>textarea:focus {
         outline: none !important;
-        border-color: #10b981;
-        box-shadow: 0 0 8px rgba(16,185,129,0.4);
+        border-color: #38bdf8;
+        box-shadow: 0 0 12px rgba(56,189,248,0.5);
     }
 
     div.stButton > button {
-        background: linear-gradient(135deg, #10b981, #059669);
+        background: linear-gradient(135deg, #3b82f6, #06b6d4);
         color: white;
         padding: 12px 28px;
         border-radius: 30px;
@@ -79,22 +80,27 @@ st.markdown("""
         width: 100%;
         margin: 12px 0;
         font-weight: 600;
-        letter-spacing: 0.3px;
-        box-shadow: 0 4px 12px rgba(16,185,129,0.25);
+        letter-spacing: 0.4px;
+        box-shadow: 0 4px 15px rgba(56,189,248,0.3);
     }
     div.stButton > button:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(16,185,129,0.4);
+        box-shadow: 0 6px 20px rgba(56,189,248,0.5);
     }
 
     .highlight {
-        background: linear-gradient(45deg, #d97706, #f59e0b);
+        background: linear-gradient(45deg, #60a5fa, #38bdf8);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 700;
     }
+
+    h1, h2, h3 {
+        text-shadow: 0 2px 10px rgba(59,130,246,0.4);
+    }
 </style>
 """, unsafe_allow_html=True)
+
 
 # ===== Sidebar =====
 with st.sidebar:
