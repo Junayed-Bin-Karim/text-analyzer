@@ -37,7 +37,7 @@ st.markdown("""
     }
     .stTextArea>div>div>textarea { 
         background-color: rgba(255,255,255,0.1); 
-        color: white; 
+        color: black; 
         border-radius: 12px; 
         padding: 15px; 
         font-size: 16px; 
@@ -65,6 +65,7 @@ st.markdown("""
         -webkit-text-fill-color: transparent;
         font-weight: bold;
     }
+    
 </style>
 """, unsafe_allow_html=True)
 
@@ -261,7 +262,7 @@ if st.button(" Analyze Text", use_container_width=True):
         
         with col2:
             if "Sentiment Analysis" in analysis_options:
-                st.markdown("### 😊 Sentiment Analysis")
+                st.markdown("###  Sentiment Analysis")
                 
                 sentiment_color = "🟢" if sentiment > 0.1 else "🔴" if sentiment < -0.1 else "🟡"
                 subjectivity_level = "High" if subjectivity > 0.6 else "Low" if subjectivity < 0.4 else "Medium"
