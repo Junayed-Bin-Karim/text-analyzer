@@ -163,7 +163,7 @@ with st.sidebar:
 # ===== Header =====
 col1, col2 = st.columns([3, 1])
 with col1:
-    st.title("Advanced Text Analyzer Developed by Junayed")
+    st.title("Advanced Text Analyzer Developed by Junayed Bin Karim")
     st.markdown("### Comprehensive Text Analysis Tool")
 with col2:
     st.markdown(f"<p style='text-align: right; color: #fbbf24;'>🕒 {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>", 
