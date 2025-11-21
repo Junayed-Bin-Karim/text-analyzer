@@ -85,10 +85,10 @@ streamlit run app.py
 
 কাস্টমাইজেশন: বিভিন্ন সেকশন দেখান/লুকান এবং ইন্টারেক্টিভ চার্ট ব্যবহার করুন
 
-উদাহরণ বিশ্লেষণ
+### উদাহরণ বিশ্লেষণ
 "The quick brown fox jumps over the lazy dog. This sentence contains all English letters! Natural language processing helps computers understand human language through machine learning algorithms and artificial intelligence techniques."
 
-ডিপেন্ডেন্সি
+### ডিপেন্ডেন্সি
 প্যাকেজ	ভার্সন	উদ্দেশ্য
 streamlit	^1.28.0	ওয়েব অ্যাপ্লিকেশন ফ্রেমওয়ার্ক
 pandas	^2.0.0	ডেটা ম্যানিপুলেশন এবং বিশ্লেষণ
@@ -111,10 +111,8 @@ advanced-text-analyzer/
 
 MIT লাইসেন্সের অধীনে উপলব্ধ।
 
-ডেভেলপার
+### ডেভেলপার
 
 Md Junayed Bin Karim
 Computer Science & Engineering, Daffodil International University
-Email: junayed@student.email
 
-GitHub: @junayedbin
