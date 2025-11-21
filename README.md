@@ -1,319 +1,310 @@
-Advanced Text Analyzer
-A comprehensive web-based text analysis tool built with Streamlit that provides detailed insights into your text content through advanced analytics and beautiful visualizations.
+অ্যাডভান্সড টেক্সট অ্যানালাইজার
+একটি সম্পূর্ণ ওয়েব-ভিত্তিক টেক্সট বিশ্লেষণ টুল যা স্ট্রিমলিট ব্যবহার করে তৈরি করা হয়েছে এবং উন্নত অ্যানালিটিক্স ও সুন্দর ভিজুয়ালাইজেশনের মাধ্যমে আপনার টেক্সট কন্টেন্টের বিস্তারিত তথ্য প্রদান করে।
 
-[https://via.placeholder.com/800x400/667eea/ffffff?text=Advanced+Text+Analyzer
-](https://text-analyzer-ai.streamlit.app/)
+বৈশিষ্ট্যসমূহ
+মৌলিক পরিসংখ্যান
+শব্দ সংখ্যা বিশ্লেষণ
 
-🌟 Features
-📊 Basic Statistics
-Word count analysis
+অক্ষর সংখ্যা (স্পেস সহ ও ছাড়া)
 
-Character count (with and without spaces)
+লাইন সংখ্যা ট্র্যাকিং
 
-Line count tracking
+পড়ার সময় অনুমান
 
-Reading time estimation
+টেক্সট বৈশিষ্ট্য
+স্বরবর্ণ ও ব্যঞ্জনবর্ণ বিশ্লেষণ
 
-🔍 Text Properties
-Vowel and consonant analysis
+সংখ্যা ও বিশেষ অক্ষর গণনা
 
-Digit and special character counting
+কেস বিশ্লেষণ (বড়হাতের/ছোটহাতের)
 
-Case analysis (uppercase/lowercase)
+স্পেস ও যতিচিহ্ন ট্র্যাকিং
 
-Space and punctuation tracking
+সেন্টিমেন্ট বিশ্লেষণ
+পোলারিটি স্কোরিং (ইতিবাচক/নেতিবাচক/নিরপেক্ষ)
 
-😊 Sentiment Analysis
-Polarity scoring (positive/negative/neutral)
+সাবজেক্টিভিটি পরিমাপ
 
-Subjectivity measurement
+রিয়েল-টাইম সেন্টিমেন্ট শ্রেণীবিভাগ
 
-Real-time sentiment classification
+শব্দ ফ্রিকোয়েন্সি
+শীর্ষ ১০ সর্বাধিক ব্যবহৃত শব্দ
 
-📈 Word Frequency
-Top 10 most frequent words
+স্টপ ওয়ার্ড ফিল্টারিং
 
-Stop word filtering
+ইন্টারেক্টিভ ফ্রিকোয়েন্সি চার্ট
 
-Interactive frequency charts
+শব্দ দৈর্ঘ্য বন্টন
 
-Word length distribution
+পড়ার মেট্রিক্স
+পাঠযোগ্যতা স্কোরিং
 
-📖 Reading Metrics
-Readability scoring
+পড়ার স্তর মূল্যায়ন
 
-Reading level assessment
+বোধগম্যতা কঠিনতা সূচক
 
-Comprehension difficulty indicators
+উন্নত বৈশিষ্ট্য
+টেক্সট ক্লিনিং এবং নরমালাইজেশন
 
-⚡ Advanced Features
-Text cleaning and normalization
+টেক্সট রিভার্সাল
 
-Text reversal
+প্যালিনড্রোম শনাক্তকরণ
 
-Palindrome detection
+অক্ষর ফ্রিকোয়েন্সি বিশ্লেষণ
 
-Character frequency analysis
+ভিজুয়াল অ্যানালিটিক্স
+অক্ষর বন্টনের জন্য ইন্টারেক্টিভ পাই চার্ট
 
-📊 Visual Analytics
-Interactive Pie charts for character distribution
+শব্দ ফ্রিকোয়েন্সির জন্য বার চার্ট
 
-Bar charts for word frequency
+শব্দ দৈর্ঘ্য বন্টন গ্রাফ
 
-Word length distribution graphs
+রিয়েল-টাইম ডেটা ভিজুয়ালাইজেশন
 
-Real-time data visualization
-
-🚀 Quick Start
-Prerequisites
+দ্রুত শুরু
+প্রাক-প্রয়োজনীয়তা
 Python 3.7+
 
 pip (Python package manager)
 
-Installation
-Clone or download the project files
+ইনস্টলেশন
+১. প্রকল্প ফাইল ডাউনলোড বা ক্লোন করুন
 
 bash
-# If you have the files locally, navigate to the project directory
+# যদি ফাইল স্থানীয়ভাবে থাকে, প্রজেক্ট ডিরেক্টরিতে নেভিগেট করুন
 cd advanced-text-analyzer
-Install required dependencies
+২. প্রয়োজনীয় ডিপেন্ডেন্সি ইনস্টল করুন
 
 bash
 pip install streamlit pandas plotly textblob
-Run the application
+৩. অ্যাপ্লিকেশন চালু করুন
 
 bash
 streamlit run app.py
-Access the application
+৪. অ্যাপ্লিকেশন অ্যাক্সেস করুন
 
-Open your web browser
+আপনার ওয়েব ব্রাউজার খুলুন
 
-Navigate to http://localhost:8501
+http://localhost:8501 এ নেভিগেট করুন
 
-Start analyzing your text!
+আপনার টেক্সট বিশ্লেষণ শুরু করুন!
 
-🛠 Usage
-Basic Text Analysis
-Enter Text: Paste or type your text in the input area
+ব্যবহার
+মৌলিক টেক্সট বিশ্লেষণ
+১. টেক্সট ইনপুট করুন: ইনপুট এরিয়ায় আপনার টেক্সট পেস্ট বা টাইপ করুন
+২. বিশ্লেষণের ধরন নির্বাচন করুন: কোন বিশ্লেষণ সম্পাদন করতে চান তা নির্বাচন করুন
+৩. বিশ্লেষণ ক্লিক করুন: তাৎক্ষণিক বিস্তারিত ফলাফল পান
 
-Select Analysis Types: Choose which analyses to perform
+কাস্টমাইজেশন অপশন
+বিভিন্ন বিশ্লেষণের ধরন টগল করুন
 
-Click Analyze: Get instant comprehensive results
+ইন্টারেক্টিভ চার্ট দেখান/লুকান
 
-Customization Options
-✅ Toggle different analysis types
+কাঁচা ডেটা টেবিল প্রদর্শন করুন
 
-📊 Show/hide interactive charts
+ভিজুয়ালাইজেশন সেটিংস সামঞ্জস্য করুন
 
-📋 Display raw data tables
-
-⚙️ Adjust visualization settings
-
-Example Analysis
-Try this sample text:
+উদাহরণ বিশ্লেষণ
+এই নমুনা টেক্সটটি চেষ্টা করুন:
 
 text
 "The quick brown fox jumps over the lazy dog. This sentence contains all English letters! Natural language processing helps computers understand human language through machine learning algorithms and artificial intelligence techniques."
-📦 Dependencies
-Package	Version	Purpose
-streamlit	^1.28.0	Web application framework
-pandas	^2.0.0	Data manipulation and analysis
-plotly	^5.15.0	Interactive visualizations
-textblob	^0.17.1	Sentiment analysis and NLP
-numpy	^1.24.0	Numerical computations
-🎨 Interface Features
-Modern Design
-Gradient Background: Beautiful radial gradient theme
+ডিপেন্ডেন্সি
+প্যাকেজ	ভার্সন	উদ্দেশ্য
+streamlit	^1.28.0	ওয়েব অ্যাপ্লিকেশন ফ্রেমওয়ার্ক
+pandas	^2.0.0	ডেটা ম্যানিপুলেশন এবং বিশ্লেষণ
+plotly	^5.15.0	ইন্টারেক্টিভ ভিজুয়ালাইজেশন
+textblob	^0.17.1	সেন্টিমেন্ট বিশ্লেষণ এবং NLP
+numpy	^1.24.0	সংখ্যাসূচক গণনা
+ইন্টারফেস বৈশিষ্ট্য
+আধুনিক ডিজাইন
+গ্রেডিয়েন্ট ব্যাকগ্রাউন্ড: সুন্দর রেডিয়াল গ্রেডিয়েন্ট থিম
 
-Glass Morphism Cards: Semi-transparent UI elements
+গ্লাস মরফিজম কার্ড: আধ-স্বচ্ছ UI এলিমেন্ট
 
-Smooth Animations: Hover effects and transitions
+স্মুথ অ্যানিমেশন: হোভার ইফেক্ট এবং ট্রানজিশন
 
-Responsive Layout: Adapts to different screen sizes
+রেস্পন্সিভ লেআউট: বিভিন্ন স্ক্রিন সাইজে মানানসই
 
-User Experience
-Real-time Analysis: Instant results
+ব্যবহারকারীর অভিজ্ঞতা
+রিয়েল-টাইম বিশ্লেষণ: তাৎক্ষণিক ফলাফল
 
-Interactive Charts: Clickable and zoomable visualizations
+ইন্টারেক্টিভ চার্ট: ক্লিকযোগ্য এবং জুমযোগ্য ভিজুয়ালাইজেশন
 
-Customizable Views: Show/hide sections as needed
+কাস্টমাইজযোগ্য ভিউ: প্রয়োজন অনুযায়ী সেকশন দেখান/লুকান
 
-Mobile Friendly: Responsive design
+মোবাইল ফ্রেন্ডলি: রেস্পন্সিভ ডিজাইন
 
-📊 Analysis Metrics
-Basic Counts
-Words: Total word count
+বিশ্লেষণ মেট্রিক্স
+মৌলিক গণনা
+শব্দ: মোট শব্দ সংখ্যা
 
-Characters: Total characters (with/without spaces)
+অক্ষর: মোট অক্ষর সংখ্যা (স্পেস সহ/ছাড়া)
 
-Lines: Number of text lines
+লাইন: টেক্সট লাইনের সংখ্যা
 
-Reading Time: Estimated reading time in minutes
+পড়ার সময়: মিনিটে আনুমানিক পড়ার সময়
 
-Text Composition
-Vowels/Consonants: Alphabet character analysis
+টেক্সট কম্পোজিশন
+স্বরবর্ণ/ব্যঞ্জনবর্ণ: বর্ণমালা অক্ষর বিশ্লেষণ
 
-Digits: Numerical character count
+সংখ্যা: সংখ্যাসূচক অক্ষর গণনা
 
-Spaces: Whitespace analysis
+স্পেস: হোয়াইটস্পেস বিশ্লেষণ
 
-Special Characters: Punctuation and symbols
+বিশেষ অক্ষর: যতিচিহ্ন এবং প্রতীক
 
-Advanced Metrics
-Sentiment Score: -1.0 (negative) to +1.0 (positive)
+উন্নত মেট্রিক্স
+সেন্টিমেন্ট স্কোর: -1.0 (নেতিবাচক) থেকে +1.0 (ইতিবাচক)
 
-Subjectivity: 0.0 (objective) to 1.0 (subjective)
+সাবজেক্টিভিটি: 0.0 (বস্তুনিষ্ঠ) থেকে 1.0 (আত্মনিষ্ঠ)
 
-Readability Score: 0-100 scale
+পাঠযোগ্যতা স্কোর: 0-100 স্কেল
 
-Palindrome Detection: Text symmetry analysis
+প্যালিনড্রোম শনাক্তকরণ: টেক্সট সিমেট্রি বিশ্লেষণ
 
-🔧 Technical Details
-Architecture
-Frontend: Streamlit framework
+প্রযুক্তিগত বিবরণ
+আর্কিটেকচার
+ফ্রন্টএন্ড: স্ট্রিমলিট ফ্রেমওয়ার্ক
 
-Styling: Custom CSS with modern design principles
+স্টাইলিং: আধুনিক ডিজাইন নীতি সহ কাস্টম CSS
 
-Visualization: Plotly for interactive charts
+ভিজুয়ালাইজেশন: ইন্টারেক্টিভ চার্টের জন্য প্লটলি
 
-NLP: TextBlob for sentiment analysis
+NLP: সেন্টিমেন্ট বিশ্লেষণের জন্য টেক্সটব্লব
 
-Algorithms
-Sentiment Analysis: Pattern analysis with TextBlob
+অ্যালগরিদম
+সেন্টিমেন্ট বিশ্লেষণ: টেক্সটব্লব সহ প্যাটার্ন বিশ্লেষণ
 
-Readability Scoring: Custom algorithm based on sentence and word length
+পাঠযোগ্যতা স্কোরিং: বাক্য এবং শব্দ দৈর্ঘ্যের উপর ভিত্তি করে কাস্টম অ্যালগরিদম
 
-Word Frequency: Counter-based analysis with stop word filtering
+শব্দ ফ্রিকোয়েন্সি: স্টপ ওয়ার্ড ফিল্টারিং সহ কাউন্টার-ভিত্তিক বিশ্লেষণ
 
-Text Processing: Regular expression-based cleaning
+টেক্সট প্রসেসিং: রেগুলার এক্সপ্রেশন-ভিত্তিক ক্লিনিং
 
-📁 Project Structure
+প্রকল্প কাঠামো
 text
 advanced-text-analyzer/
 │
-├── app.py                 # Main application file
-├── requirements.txt       # Python dependencies
-├── README.md             # Project documentation
-└── assets/               # Additional resources (if any)
-🎯 Use Cases
-📝 Content Writers
-Analyze article readability
+├── app.py                 # প্রধান অ্যাপ্লিকেশন ফাইল
+├── requirements.txt       # Python ডিপেন্ডেন্সি
+├── README.md             # প্রকল্প ডকুমেন্টেশন
+└── assets/               # অতিরিক্ত রিসোর্স (যদি থাকে)
+ব্যবহারের ক্ষেত্র
+কন্টেন্ট রাইটার
+নিবন্ধের পাঠযোগ্যতা বিশ্লেষণ
 
-Check sentiment tone
+সেন্টিমেন্ট টোন পরীক্ষা
 
-Optimize word choice
+শব্দ পছন্দ অপ্টিমাইজেশন
 
-Improve writing quality
+লেখার মান উন্নয়ন
 
-🎓 Students & Researchers
-Text analysis for assignments
+শিক্ষার্থী ও গবেষক
+অ্যাসাইনমেন্টের জন্য টেক্সট বিশ্লেষণ
 
-Linguistic research
+ভাষাবিজ্ঞান গবেষণা
 
-Data visualization projects
+ডেটা ভিজুয়ালাইজেশন প্রকল্প
 
-Academic writing assistance
+একাডেমিক লেখার সহায়তা
 
-💼 Business Professionals
-Document analysis
+ব্যবসায়িক পেশাদার
+ডকুমেন্ট বিশ্লেষণ
 
-Content optimization
+কন্টেন্ট অপ্টিমাইজেশন
 
-Sentiment tracking
+সেন্টিমেন্ট ট্র্যাকিং
 
-Report generation
+রিপোর্ট জেনারেশন
 
-👨‍💻 Developers
-NLP project prototyping
+ডেভেলপার
+NLP প্রকল্প প্রোটোটাইপিং
 
-Text processing examples
+টেক্সট প্রসেসিং উদাহরণ
 
-Streamlit learning resource
+স্ট্রিমলিট লার্নিং রিসোর্স
 
-Data visualization reference
+ডেটা ভিজুয়ালাইজেশন রেফারেন্স
 
-🔍 Advanced Features
-Text Transformation
-Text Cleaning: Remove special characters and normalize spaces
+উন্নত বৈশিষ্ট্য
+টেক্সট ট্রান্সফরমেশন
+টেক্সট ক্লিনিং: বিশেষ অক্ষর সরানো এবং স্পেস নরমালাইজেশন
 
-Text Reversal: Reverse text character order
+টেক্সট রিভার্সাল: অক্ষর ক্রম বিপরীত করা
 
-Case Analysis: Uppercase/lowercase character counting
+কেস বিশ্লেষণ: বড়হাতের/ছোটহাতের অক্ষর গণনা
 
-Visual Analytics
-Character Distribution Pie Chart: Visual breakdown of text composition
+ভিজুয়াল অ্যানালিটিক্স
+অক্ষর বন্টন পাই চার্ট: টেক্সট কম্পোজিশনের ভিজুয়াল ব্রেকডাউন
 
-Word Frequency Bar Chart: Top words visualization
+শব্দ ফ্রিকোয়েন্সি বার চার্ট: শীর্ষ শব্দ ভিজুয়ালাইজেশন
 
-Word Length Distribution: Analysis of word size patterns
+শব্দ দৈর্ঘ্য বন্টন: শব্দ আকার প্যাটার্ন বিশ্লেষণ
 
-Data Export
-Raw Data Tables: Structured data presentation
+ডেটা এক্সপোর্ট
+কাঁচা ডেটা টেবিল: স্ট্রাকচার্ড ডেটা উপস্থাপনা
 
-Chart Export: Downloadable visualizations
+চার্ট এক্সপোর্ট: ডাউনলোডযোগ্য ভিজুয়ালাইজেশন
 
-Analysis Summary: Comprehensive metrics export
+বিশ্লেষণ সারাংশ: ব্যাপক মেট্রিক্স এক্সপোর্ট
 
-🐛 Troubleshooting
-Common Issues
-Module Not Found Error
+সমস্যা সমাধান
+সাধারণ সমস্যা
+১. মডিউল খুঁজে পাওয়া যায়নি ত্রুটি
 
 bash
-# Reinstall dependencies
+# ডিপেন্ডেন্সি পুনরায় ইনস্টল করুন
 pip install -r requirements.txt
-Streamlit Port Already in Use
+২. স্ট্রিমলিট পোর্ট ইতিমধ্যেই ব্যবহার中
 
 bash
-# Use different port
+# ভিন্ন পোর্ট ব্যবহার করুন
 streamlit run app.py --server.port 8502
-TextBlob Corpora Missing
+৩. টেক্সটব্লব কর্পোরা অনুপস্থিত
 
 bash
-# Download required NLTK data
+# প্রয়োজনীয় NLTK ডেটা ডাউনলোড করুন
 python -m textblob.download_corpora
-Performance Tips
-For very long texts, consider analyzing in sections
+পারফরম্যান্স টিপস
+খুব দীর্ঘ টেক্সটের জন্য, বিভাগে বিভক্ত করে বিশ্লেষণ করুন
 
-Use the selective analysis options to improve speed
+গতি উন্নত করতে নির্বাচনী বিশ্লেষণ অপশন ব্যবহার করুন
 
-Close other browser tabs for better performance
+ভাল পারফরম্যান্সের জন্য অন্যান্য ব্রাউজার ট্যাব বন্ধ করুন
 
-🤝 Contributing
-We welcome contributions! Please feel free to submit pull requests, report bugs, or suggest new features.
+অবদান
+আমরা অবদান স্বাগত জানাই! দয়া করে পুল রিকোয়েস্ট জমা দিন, বাগ রিপোর্ট করুন বা নতুন বৈশিষ্ট্যের পরামর্শ দিন।
 
-Development Setup
-Fork the repository
+ডেভেলপমেন্ট সেটআপ
+১. রিপোজিটরি ফর্ক করুন
+২. একটি ফিচার ব্রাঞ্চ তৈরি করুন
+৩. আপনার পরিবর্তনগুলি করুন
+৪. সম্পূর্ণরূপে পরীক্ষা করুন
+৫. একটি পুল রিকোয়েস্ট জমা দিন
 
-Create a feature branch
+লাইসেন্স
+এই প্রকল্পটি ওপেন সোর্স এবং MIT লাইসেন্সের অধীনে উপলব্ধ।
 
-Make your changes
+ডেভেলপার
+মd জুনায়েদ বিন করিম
 
-Test thoroughly
+কম্পিউটার সায়েন্স অ্যান্ড ইঞ্জিনিয়ারিং
 
-Submit a pull request
+ড্যাফোডিল ইন্টারন্যাশনাল ইউনিভার্সিটি
 
-📄 License
-This project is open source and available under the MIT License.
-
-👨‍💻 Developer
-Md Junayed Bin Karim
-
-Computer Science & Engineering
-
-Daffodil International University
-
-Email: junayed@student.email
+ইমেইল: junayed@student.email
 
 GitHub: @junayedbin
 
-🙏 Acknowledgments
-Streamlit team for the amazing framework
+স্বীকৃতি
+স্ট্রিমলিট টিমের জন্য আশ্চর্যজনক ফ্রেমওয়ার্কের জন্য
 
-Plotly for interactive visualization capabilities
+প্লটলি ইন্টারেক্টিভ ভিজুয়ালাইজেশন ক্ষমতার জন্য
 
-TextBlob for natural language processing features
+টেক্সটব্লব ন্যাচারাল ল্যাঙ্গুয়েজ প্রসেসিং বৈশিষ্ট্যের জন্য
 
-Pandas for data manipulation tools
+প্যান্ডাস ডেটা ম্যানিপুলেশন টুলের জন্য
 
-⭐ If you find this project helpful, please give it a star!
+⭐ যদি আপনি এই প্রকল্পটি সহায়ক মনে করেন, দয়া করে এটিকে একটি স্টার দিন!
 
