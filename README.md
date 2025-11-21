@@ -2,7 +2,7 @@
 
 
 
-![Advanced Text Analyzer](text-analyzer/Advanced%20Text%20Analyzer.png)
+![Advanced Text Analyzer](Advanced%20Text%20Analyzer.png)
 
 
 **Live Demo:** [Advanced Text Analyzer](https://text-analyzer-ai.streamlit.app/)
