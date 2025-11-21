@@ -15,12 +15,36 @@
 এছাড়াও, এই টুলটি **ইন্টারেক্টিভ ভিজুয়ালাইজেশন** ব্যবহার করে ডেটাকে সহজে বোঝার উপযোগী করে তোলে। ব্যবহারকারী পছন্দ অনুযায়ী বিভিন্ন চার্ট দেখাতে বা লুকাতে পারেন, কাঁচা ডেটা টেবিল এক্সপোর্ট করতে পারেন, এবং তাৎক্ষণিকভাবে ফলাফল দেখতে পারেন।  
 **Live Demo:** [Advanced Text Analyzer](https://text-analyzer-ai.streamlit.app/)
 
+## ব্যবহৃত প্রযুক্তি
 
+### Programming Language
+- **Python 3.7+** – প্রোজেক্টের মূল প্রোগ্রামিং ভাষা।  
+
+### Web Framework
+- **Streamlit** – দ্রুত ওয়েব অ্যাপ্লিকেশন তৈরি এবং ইন্টারেক্টিভ UI ডিজাইন করার জন্য।  
+
+### Data Manipulation & Analysis
+- **Pandas** – ডেটা ম্যানিপুলেশন, টেবিল তৈরি এবং বিশ্লেষণের জন্য।  
+- **NumPy** – সংখ্যাসূচক গণনা ও অ্যালগরিদমের জন্য।  
+
+### Visualization
+- **Plotly** – ইন্টারেক্টিভ চার্ট এবং গ্রাফ তৈরি করতে।  
+
+### Natural Language Processing (NLP)
+- **TextBlob** –  
+  - সেন্টিমেন্ট বিশ্লেষণ (Polarity & Subjectivity)  
+  - টেক্সট ক্লিনিং ও প্রক্রিয়াকরণ  
+  - স্টপ-ওয়ার্ড ফিল্টারিং  
+
+### Others
+- **Regex (re module in Python)** – টেক্সট ক্লিনিং এবং অ্যালফানিউমেরিক ফিল্টারিং।  
+- **OS & File Handling** – লোকাল ফাইল এবং অ্যাসেট ম্যানেজ করার জন্য।  
+
+---
 
 ![Advanced Text Analyzer](Advanced%20Text%20Analyzer.png)
 
 
-**Live Demo:** [Advanced Text Analyzer](https://text-analyzer-ai.streamlit.app/)
 
 
 ---
@@ -68,3 +92,6 @@
 - রিয়েল-টাইম ডেটা ভিজুয়ালাইজেশন
 
 ---
+
+
+
